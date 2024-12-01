@@ -132,7 +132,8 @@ const Dashboard2 = () => {
         );
         count_facedetect++;
       } else {
-        swal("Face Not Visible", "Action has been Recorded", "error");
+        // swal("Face Not Visible", "Action has been Recorded", "error");
+        console.log("Face Not Visible");
         count_facedetect++;
       }
     });
