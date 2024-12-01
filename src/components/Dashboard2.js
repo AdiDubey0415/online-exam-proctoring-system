@@ -121,7 +121,8 @@ const Dashboard2 = () => {
       if (prediction.class === "person") {
         multiple_face++;
         if (multiple_face >= 2) {
-          swal("Multiple Face Detection", "Action has been Recorded", "error");
+          // swal("Multiple Face Detection", "Action has been Recorded", "error");
+          console.log("Multiple Face Detection");
         }
       } else if (["cell phone", "book", "laptop"].includes(prediction.class)) {
         swal(
